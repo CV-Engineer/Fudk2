@@ -36,6 +36,9 @@ public class HelloController {
 
     @GetMapping("{name}")
     public Fucker queryUserByName(@PathVariable("name") String name ){
+
+        System.out.println("branch 1");
+
         return this.fuckerMapper.selectByPrimaryKey(name);
 
     }
